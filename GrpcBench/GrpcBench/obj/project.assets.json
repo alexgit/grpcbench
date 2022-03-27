@@ -4818,11 +4818,12 @@
       ]
     },
     "System.Text.Encoding.CodePages/4.3.0": {
-      "sha512": "6ENnyNU7cdmUVYblQ9GzLuJlLs9HWyoSInm+JZyCBHFUTaSQZolLIdGSZWGw5VOhjbFop+u/pU0AbKiHQKheqw==",
+      "sha512": "IRiEFUa5b/Gs5Egg8oqBVoywhtOeaO2KOx3j0RfcYY/raxqBuEK7NXRDgOwtYM8qbi+7S4RPXUbNt+ZxyY0/NQ==",
       "type": "package",
       "path": "system.text.encoding.codepages/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5581,23 +5582,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alex\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\aleksandar_tashev\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\data\\dev\\grpcbench\\GrpcBench\\GrpcBench\\GrpcBench.csproj",
+      "projectUniqueName": "D:\\code\\grpcbench\\GrpcBench\\GrpcBench\\GrpcBench.csproj",
       "projectName": "GrpcBench",
-      "projectPath": "D:\\data\\dev\\grpcbench\\GrpcBench\\GrpcBench\\GrpcBench.csproj",
-      "packagesPath": "C:\\Users\\alex\\.nuget\\packages\\",
-      "outputPath": "D:\\data\\dev\\grpcbench\\GrpcBench\\GrpcBench\\obj\\",
+      "projectPath": "D:\\code\\grpcbench\\GrpcBench\\GrpcBench\\GrpcBench.csproj",
+      "packagesPath": "C:\\Users\\aleksandar_tashev\\.nuget\\packages\\",
+      "outputPath": "D:\\code\\grpcbench\\GrpcBench\\GrpcBench\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aleksandar_tashev\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5652,12 +5649,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.12, 5.0.12]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

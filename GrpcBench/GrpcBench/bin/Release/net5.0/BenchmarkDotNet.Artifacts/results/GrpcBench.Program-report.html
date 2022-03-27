@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
 <meta charset='utf-8' />
-<title>GrpcBench.Program-20220327-093510</title>
+<title>GrpcBench.Program-20220327-151809</title>
 
 <style type="text/css">
 	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
@@ -13,18 +13,20 @@
 </head>
 <body>
 <pre><code>
-BenchmarkDotNet=v0.13.1, OS=Windows 10.0.22000
-Intel Core i7-7500U CPU 2.70GHz (Kaby Lake), 1 CPU, 4 logical and 2 physical cores
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.18363.2158 (1909/November2019Update/19H2)
+Intel Core i5-8365U CPU 1.60GHz (Coffee Lake), 1 CPU, 8 logical and 4 physical cores
 .NET SDK=6.0.100
-  [Host]     : .NET 5.0.13 (5.0.1321.56516), X64 RyuJIT
-  DefaultJob : .NET 5.0.13 (5.0.1321.56516), X64 RyuJIT
+  [Host]     : .NET 5.0.15 (5.0.1522.11506), X64 RyuJIT
+  Job-DXQZHB : .NET 5.0.15 (5.0.1522.11506), X64 RyuJIT
 </code></pre>
-<pre><code></code></pre>
+<pre><code>IterationCount=20  LaunchCount=1  WarmupCount=5  
+</code></pre>
 
 <table>
-<thead><tr><th>Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Median</th>
+<thead><tr><th>                   Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Ratio</th><th>RatioSD</th>
 </tr>
-</thead><tbody><tr><td>Bench</td><td>1.303 ms</td><td>0.1390 ms</td><td>0.3921 ms</td><td>1.189 ms</td>
+</thead><tbody><tr><td>IsEntitled</td><td>801.2 &mu;s</td><td>64.02 &mu;s</td><td>73.73 &mu;s</td><td>1.00</td><td>0.00</td>
+</tr><tr><td>IsEntitled_Simulate_1ms_Of_Work</td><td>2,690.7 &mu;s</td><td>335.60 &mu;s</td><td>386.48 &mu;s</td><td>3.38</td><td>0.53</td>
 </tr></tbody></table>
 </body>
 </html>

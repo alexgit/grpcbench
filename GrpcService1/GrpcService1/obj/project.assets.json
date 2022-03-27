@@ -693,23 +693,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alex\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\aleksandar_tashev\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\data\\dev\\grpcbench\\GrpcService1\\GrpcService1\\GrpcService1.csproj",
+      "projectUniqueName": "D:\\code\\grpcbench\\GrpcService1\\GrpcService1\\GrpcService1.csproj",
       "projectName": "GrpcService1",
-      "projectPath": "D:\\data\\dev\\grpcbench\\GrpcService1\\GrpcService1\\GrpcService1.csproj",
-      "packagesPath": "C:\\Users\\alex\\.nuget\\packages\\",
-      "outputPath": "D:\\data\\dev\\grpcbench\\GrpcService1\\GrpcService1\\obj\\",
+      "projectPath": "D:\\code\\grpcbench\\GrpcService1\\GrpcService1\\GrpcService1.csproj",
+      "packagesPath": "C:\\Users\\aleksandar_tashev\\.nuget\\packages\\",
+      "outputPath": "D:\\code\\grpcbench\\GrpcService1\\GrpcService1\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aleksandar_tashev\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -750,12 +746,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.12, 5.0.12]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"

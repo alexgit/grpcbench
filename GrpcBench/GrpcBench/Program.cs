@@ -2,15 +2,15 @@
 using BenchmarkDotNet.Running;
 using Grpc.Net.Client;
 using GrpcService1;
-using System;
 using System.Threading.Tasks;
 
 namespace GrpcBench
 {
+    [SimpleJob(launchCount: 1, warmupCount: 5, targetCount: 20)]
     public class Program
     {
         GrpcChannel channel;
-        Greeter.GreeterClient client;
+        Entitlements.EntitlementsClient client;
 
         static void Main(string[] args)
         {
@@ -21,7 +21,7 @@ namespace GrpcBench
         public void Setup()
         {
             channel = GrpcChannel.ForAddress("https://localhost:5001");
-            client = new Greeter.GreeterClient(channel);
+            client = new Entitlements.EntitlementsClient(channel);
         }
 
         [GlobalCleanup]
@@ -30,10 +30,26 @@ namespace GrpcBench
             channel.Dispose();
         }
 
-        [Benchmark]
-        public async Task Bench()
+        [Benchmark(Baseline = true)]
+        public async Task IsEntitled()
         {
-            await client.SayHelloAsync(new HelloRequest { Name = "GreeterClient" });
+            await client.IsEntitledAsync(new IsEntitledRequest
+            {
+                Identifier = "saved/system.environment/public/ldn/MdxDebug",
+                Verb = "Read",
+                SimulateWork = false
+            });
+        }
+
+        [Benchmark]
+        public async Task IsEntitled_Simulate_1ms_Of_Work()
+        {
+            await client.IsEntitledAsync(new IsEntitledRequest
+            {
+                Identifier = "saved/system.environment/public/ldn/MdxDebug",
+                Verb = "Read",
+                SimulateWork = true
+            });
         }
     }
 }
