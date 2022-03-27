@@ -1,0 +1,61 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 1 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in D:\data\dev\grpcbench\GrpcBench\GrpcBench\bin\Release\net5.0\f597d1e2-e2aa-440c-b6d9-b904165c90bd
+// command took 0.25s and exited with -532462766
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in D:\data\dev\grpcbench\GrpcBench\GrpcBench\bin\Release\net5.0\f597d1e2-e2aa-440c-b6d9-b904165c90bd
+// command took 15.25s and exited with -1073741819
+// ***** Done, took 00:00:15 (15.63 sec)   *****
+// Found 1 benchmarks:
+//   Program.Bench: DefaultJob
+
+// **************************
+// Benchmark: Program.Bench: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+Did not find D:\data\dev\grpcbench\GrpcBench\GrpcBench\bin\Release\net5.0\f597d1e2-e2aa-440c-b6d9-b904165c90bd\bin\Release\net5.0\f597d1e2-e2aa-440c-b6d9-b904165c90bd.dll, but the folder contained:
+f597d1e2-e2aa-440c-b6d9-b904165c90bd.dll.config
+Executable D:\data\dev\grpcbench\GrpcBench\GrpcBench\bin\Release\net5.0\f597d1e2-e2aa-440c-b6d9-b904165c90bd\bin\Release\net5.0\f597d1e2-e2aa-440c-b6d9-b904165c90bd.dll not found
+ExitCode != 0 and no results reported
+No more Benchmark runs will be launched as NO measurements were obtained from the previous run!
+
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\GrpcBench.Program-report.csv
+  BenchmarkDotNet.Artifacts\results\GrpcBench.Program-report-github.md
+  BenchmarkDotNet.Artifacts\results\GrpcBench.Program-report.html
+
+// * Detailed results *
+Program.Bench: DefaultJob
+Runtime = ; GC = 
+There are not any results runs
+
+// * Summary *
+
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.22000
+Unknown processor
+.NET SDK=6.0.100
+  [Host] : .NET 5.0.13 (5.0.1321.56516), X64 RyuJIT
+
+
+| Method | Mean | Error |
+|------- |-----:|------:|
+|  Bench |   NA |    NA |
+
+Benchmarks with issues:
+  Program.Bench: DefaultJob
+
+// * Legends *
+  Mean  : Arithmetic mean of all measurements
+  Error : Half of 99.9% confidence interval
+  1 ns  : 1 Nanosecond (0.000000001 sec)
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:00:00 (0.3 sec), executed benchmarks: 0
+
+Global total time: 00:00:15 (15.96 sec), executed benchmarks: 0
+// * Artifacts cleanup *
